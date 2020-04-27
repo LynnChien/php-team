@@ -11,7 +11,7 @@ $total = $pdo->query($sqlTotal)->fetch(PDO::FETCH_NUM)[0]; //取得總筆數
 $numPerPage = 5; //每頁幾筆
 $totalPages = ceil($total / $numPerPage); // 總頁數
 $page = isset($_GET['page']) ? (int) $_GET['page'] : 1; //目前第幾頁
-$page = $page < 1 ? 1 : $page; //若 page 小於 1，則回傳 1
+$page = $page < 1 ? 1 : $page; //若 page 小於 1，則回傳 1;
 
 
 
